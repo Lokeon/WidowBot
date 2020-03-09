@@ -7,14 +7,14 @@ from pathlib import Path
 
 def ouihaw(bot, update):
     chat_id = update.message.chat_id
-    pathX = Path(config.PATH)
+    pathX = Path(config.PATH_OUIHAW)
     bot.send_photo(chat_id=chat_id, photo=open(
         random.choice(list(pathX.glob('*.jpg'))), 'rb'))
 
 
 def mercymaker(bot, update):
     chat_id = update.message.chat_id
-    pathX = Path(config.PATH)
+    pathX = Path(config.PATH_MERCYMAKER)
     bot.send_photo(chat_id=chat_id, photo=open(
         random.choice(list(pathX.glob('*.jpg'))), 'rb'))
 
