@@ -1,6 +1,6 @@
 # WidowBot
 # You need a config.py with 
 
-TOKEN = ""
-PATH_OUIHAW = ""
-PATH_MERCYMAKER = ""
+<p> TOKEN = "" </p>
+<p> PATH_OUIHAW = "" </p>
+<p> PATH_MERCYMAKER = "" </p>
