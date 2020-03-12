@@ -8,6 +8,7 @@ from pathlib import Path
 
 def ouihaw(bot, update):
     chat_id = update.message.chat_id
+    print(update.message.name)
     pathX = Path(config.PATH_OUIHAW)
     bot.send_photo(chat_id=chat_id, photo=open(
         random.choice(list(pathX.glob('*.jpg'))), 'rb'))
@@ -27,9 +28,9 @@ def main():
     dp.add_handler(CommandHandler('mercymaker', mercymaker))
     updater.start_polling()
     updater.idle()
+    while 1:
+        time.sleep(10)
 
 
 if __name__ == '__main__':
     main()
-    while 1:
-        time.sleep(10)
