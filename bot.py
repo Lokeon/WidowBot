@@ -1,6 +1,7 @@
 import telegram
 import random
 import config
+import time
 from telegram.ext import Updater, CommandHandler
 from pathlib import Path
 
@@ -30,3 +31,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    while 1:
+        time.sleep(10)
