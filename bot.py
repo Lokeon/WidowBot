@@ -28,8 +28,6 @@ def main():
     dp.add_handler(CommandHandler('mercymaker', mercymaker))
     updater.start_polling()
     updater.idle()
-    while 1:
-        time.sleep(10)
 
 
 if __name__ == '__main__':
